@@ -1,0 +1,42 @@
+vim.o.number = true
+vim.o.relativenumber = false
+vim.o.syntax = 'enable'
+vim.o.mouse = 'a'
+--vim.o.iskeyword="+=-"
+vim.o.numberwidth = 3
+vim.o.tabstop = 2
+vim.o.softtabstop = 2
+vim.o.shiftwidth=2
+vim.o.expandtab = true
+vim.o.smartindent = true
+vim.o.clipboard = 'unnamedplus'
+vim.o.showcmd = true
+vim.o.ruler = true
+vim.o.cursorline = true
+vim.o.encoding = 'utf-8'
+vim.o.showmatch = true
+vim.o.laststatus = 2
+vim.o.exrc = true
+vim.o.hlsearch = false
+vim.o.ignorecase = true
+vim.o.wrap = false
+vim.o.incsearch = true
+vim.o.scrolloff = 10
+vim.o.showmode = false
+vim.o.signcolumn = 'yes'
+vim.o.colorcolumn = "120"
+vim.o.autowrite = true
+vim.o.hidden = true
+vim.o.pumheight = 10
+vim.o.autoindent = true
+vim.o.showtabline = 2
+--vim.o.t_Co = "256"
+--vim.o.formatoptions="-=cro"
+--vim.cmd[[formatoptions-=cro]]
+vim.o.splitbelow = true
+vim.o.splitright = true
+vim.o.conceallevel = 0
+vim.o.backup = false
+vim.o.writebackup = false
+vim.o.guifont = 'CaskaydiaCove Nerd Font\\firacode\\mono'
+vim.cmd[[colorscheme tokyonight]]

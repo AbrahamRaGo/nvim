@@ -1,0 +1,12 @@
+let g:netrw_dirhistmax  =10
+let g:netrw_dirhistcnt =2
+let g:netrw_dirhist_2='/home/abraham/monitor/monitor_server/app/controllers'
+let g:netrw_dirhist_1='/home/abraham/monitor/monitor_server/app/controllers/concerns'
+let g:netrw_dirhist_0='/home/abraham/monitor/monitor_server/app/controllers'
+let g:netrw_dirhist_9='/home/abraham/monitor/monitor_server/app'
+let g:netrw_dirhist_8='/home/abraham/monitor/monitor_server'
+let g:netrw_dirhist_7='/home/abraham/monitor'
+let g:netrw_dirhist_6='/home/abraham/.config'
+let g:netrw_dirhist_5='/home/abraham/.config/Code'
+let g:netrw_dirhist_4='/home/abraham/.config'
+let g:netrw_dirhist_3='/home/abraham'
