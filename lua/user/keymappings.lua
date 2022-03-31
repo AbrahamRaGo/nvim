@@ -9,7 +9,7 @@ vim.api.nvim_set_keymap('i', 'jk', '<ESC>', {noremap=true, silent=true})
 -- Saving and exit
 vim.api.nvim_set_keymap('n', '<leader>s', ':w<CR>', {noremap=true, silent=true})
 vim.api.nvim_set_keymap('n', '<leader>sq', ':wq<CR>', {noremap=true, silent=true})
-vim.api.nvim_set_keymap('n', '<leader>x', ':q<CR>', {noremap=true, silent=true})
+vim.api.nvim_set_keymap('n', '<leader>q', ':q<CR>', {noremap=true, silent=true})
 vim.api.nvim_set_keymap('n', '<leader>c', ':bdelete<CR>', {noremap=true, silent=true})
 
 -- Explorer
