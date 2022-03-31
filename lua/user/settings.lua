@@ -2,7 +2,14 @@ vim.o.number = true
 vim.o.relativenumber = false
 vim.o.syntax = 'enable'
 vim.o.mouse = 'a'
---vim.o.iskeyword="+=-"
+-- vim.o.completeopt = { "menuone", "noselect" }
+vim.o.swapfile = false
+vim.o.undofile = true
+vim.o.sidescrolloff = 10
+vim.cmd "set whichwrap+=<,>,[,],h,l"
+vim.cmd [[set iskeyword+=-]]
+vim.cmd [[set formatoptions-=cro]]
+vim.opt.shortmess:append 'c'
 vim.o.numberwidth = 3
 vim.o.tabstop = 2
 vim.o.softtabstop = 2
@@ -30,9 +37,6 @@ vim.o.hidden = true
 vim.o.pumheight = 10
 vim.o.autoindent = true
 vim.o.showtabline = 2
---vim.o.t_Co = "256"
---vim.o.formatoptions="-=cro"
---vim.cmd[[formatoptions-=cro]]
 vim.o.splitbelow = true
 vim.o.splitright = true
 vim.o.conceallevel = 0

@@ -7,11 +7,35 @@ end
 return require('packer').startup(function(use)
   -- My plugins here
   use 'wbthomason/packer.nvim'
+
+  -- Starting
+  use 'goolord/alpha-nvim'
+
+  -- Tree explorer
   use 'kyazdani42/nvim-tree.lua'
+
+  -- Icons
   use 'kyazdani42/nvim-web-devicons'
+
+  -- Treesitter
   use { 'nvim-treesitter/nvim-treesitter', run = ':TSUpdate'}
   use 'p00f/nvim-ts-rainbow'
-  use 'windwp/nvim-autopairs'
+
+  -- Comments
+  use 'numToStr/Comment.nvim'
+  use 'JoosepAlviste/nvim-ts-context-commentstring'
+
+  -- Git
+  use 'lewis6991/gitsigns.nvim'
+
+  -- Terminal
+  use "akinsho/toggleterm.nvim"
+
+  -- Formatting
+  use 'jose-elias-alvarez/null-ls.nvim'
+
+  -- Movement
+  use 'justinmk/vim-sneak'
 
   -- Telescope
   use {
@@ -35,6 +59,7 @@ return require('packer').startup(function(use)
   use 'hrsh7th/cmp-path'
   use 'hrsh7th/cmp-cmdline'
   use 'hrsh7th/nvim-cmp'
+  use 'windwp/nvim-autopairs'
 
     -- LSP
   use "neovim/nvim-lspconfig" -- enable LSP
@@ -49,6 +74,12 @@ return require('packer').startup(function(use)
   use 'folke/tokyonight.nvim'
   use 'arcticicestudio/nord-vim'
   use 'dracula/vim'
+
+  -- Indent
+  use 'lukas-reineke/indent-blankline.nvim'
+
+  -- Whichkey
+  use 'folke/which-key.nvim'
 
   -- Automatically set up your configuration after cloning packer.nvim
   -- Put this at the end after all plugins
