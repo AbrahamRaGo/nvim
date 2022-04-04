@@ -10,6 +10,7 @@ vim.cmd "set whichwrap+=<,>,[,],h,l"
 vim.cmd [[set iskeyword+=-]]
 vim.cmd [[set formatoptions-=cro]]
 vim.opt.shortmess:append 'c'
+vim.opt.foldenable = true
 vim.o.numberwidth = 3
 vim.o.tabstop = 2
 vim.o.softtabstop = 2
@@ -36,11 +37,14 @@ vim.o.autowrite = true
 vim.o.hidden = true
 vim.o.pumheight = 10
 vim.o.autoindent = true
---vim.o.showtabline = 2
+vim.o.showtabline = 2
+vim.o.termguicolors = true
 vim.o.splitbelow = true
 vim.o.splitright = true
 vim.o.conceallevel = 0
 vim.o.backup = false
 vim.o.writebackup = false
 vim.o.guifont = 'CaskaydiaCove Nerd Font\\firacode\\mono'
-vim.cmd[[colorscheme tokyonight]]
+vim.cmd[[colorscheme tokyonight ]]
+vim.g.tokyonight_style = 'storm'
+vim.o.background = 'dark'

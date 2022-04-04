@@ -22,6 +22,7 @@ return require('packer').startup(function(use)
   -- Treesitter
   use { 'nvim-treesitter/nvim-treesitter', run = ':TSUpdate'}
   use 'p00f/nvim-ts-rainbow'
+  use 'mvllow/modes.nvim'
 
   -- Comments
   use 'numToStr/Comment.nvim'
@@ -76,6 +77,9 @@ return require('packer').startup(function(use)
   use 'folke/tokyonight.nvim'
   use 'arcticicestudio/nord-vim'
   use 'dracula/vim'
+  use 'morhetz/gruvbox'
+  use 'catppuccin/nvim'
+  use 'daltonmenezes/aura-theme'
 
   -- Indent
   use 'lukas-reineke/indent-blankline.nvim'
