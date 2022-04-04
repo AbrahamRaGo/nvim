@@ -11,7 +11,7 @@ local diagnostics = {
 	"diagnostics",
 	--sources = { "nvim_diagnostic" },
 	sections = { "error", "warn", "hint", "info" },
-	symbols = { error = " ", warn = " ", hint = " ", info = " " },
+	symbols = { error = " ", warn = " ", hint = " ", info = " " },
 	colored = true,
 	update_in_insert = true,
 	always_visible = true,
@@ -41,6 +41,9 @@ local mode = {
     end
     if str == 'VISUAL' then
       return " " .. str
+    end
+    if str == 'COMMAND' then
+      return " " .. str
     end
 	end,
 }
@@ -76,6 +79,12 @@ local spaces = function()
 	return "spaces: " .. vim.api.nvim_buf_get_option(0, "shiftwidth")
 end
 
+local filename = {
+  'filename',
+  file_status = false,
+  path = 1,
+}
+
 lualine.setup {
   options = {
     icons_enabled = true,
@@ -84,14 +93,14 @@ lualine.setup {
     section_separators = { left = '', right = ''},
     disabled_filetypes = {'dashboard', 'NvimTree', 'Outline', 'alpha'},
     always_divide_middle = true,
-    globalstatus = false,
+    globalstatus = true,
   },
   sections = {
     lualine_a = {mode},
     lualine_b = {branch, diff},
     lualine_c = {},
     lualine_x = {filetype},
-    lualine_y = {'progress'},
+    lualine_y = {progress},
     lualine_z = {location},
   },
   inactive_sections = {
@@ -105,7 +114,8 @@ lualine.setup {
   tabline = {
     lualine_a = {'buffers'},
     lualine_x = {diagnostics},
-    lualine_y = {'fileformat'},
+    lualine_y = {filename},
+    lualine_z = {'fileformat'}
   },
   extensions = {}
 }

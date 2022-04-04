@@ -50,7 +50,7 @@ vim.api.nvim_set_keymap("x", "<A-j>", ":move '>+1<CR>gv-gv", opts)
 vim.api.nvim_set_keymap("x", "<A-k>", ":move '<-2<CR>gv-gv", opts)
 
 -- Telescope
-vim.api.nvim_set_keymap("n", "<leader>tf", "<cmd>lua require'telescope.builtin'.find_files(require('telescope.themes').get_dropdown({ previewer = false }))<cr>", opts)
+vim.api.nvim_set_keymap("n", "<leader>f", "<cmd>lua require'telescope.builtin'.find_files(require('telescope.themes').get_dropdown({ previewer = false }))<cr>", opts)
 vim.api.nvim_set_keymap("n", "<leader>gb", ":Telescope git_branches<cr>", opts)
 vim.api.nvim_set_keymap('n', '<leader>gs', ':Telescope git_status<cr>', opts)
 

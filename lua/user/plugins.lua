@@ -11,6 +11,8 @@ return require('packer').startup(function(use)
   -- Starting
   use 'goolord/alpha-nvim'
 
+  use 'ahmedkhalf/project.nvim'
+
   -- Tree explorer
   use 'kyazdani42/nvim-tree.lua'
 
