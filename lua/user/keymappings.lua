@@ -19,8 +19,8 @@ vim.api.nvim_set_keymap('n', '<leader>e', ':NvimTreeToggle<CR>', {noremap=true, 
 vim.api.nvim_set_keymap('n', '<leader>o', ':set hlsearch!<CR>', {noremap=true, silent=true})
 
 -- Split window
-vim.api.nvim_set_keymap('n', '<leader>vw', ':vsplit<CR>', {silent=true})
-vim.api.nvim_set_keymap('n', '<leader>w', ':split<CR>', {silent=true})
+vim.api.nvim_set_keymap('n', '<leader>w', ':vsplit<CR>', {silent=true})
+vim.api.nvim_set_keymap('n', '<leader>hw', ':split<CR>', {silent=true})
 
 -- Better window movements
 vim.api.nvim_set_keymap('n', '<C-h>', '<C-w>h', {silent=true})
