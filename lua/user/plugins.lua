@@ -80,6 +80,7 @@ return require('packer').startup(function(use)
   use 'morhetz/gruvbox'
   use 'catppuccin/nvim'
   use 'daltonmenezes/aura-theme'
+  use "rebelot/kanagawa.nvim"
 
   -- Indent
   use 'lukas-reineke/indent-blankline.nvim'

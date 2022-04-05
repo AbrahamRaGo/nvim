@@ -45,6 +45,6 @@ vim.o.conceallevel = 0
 vim.o.backup = false
 vim.o.writebackup = false
 vim.o.guifont = 'CaskaydiaCove Nerd Font\\firacode\\mono'
-vim.cmd[[colorscheme tokyonight ]]
-vim.g.tokyonight_style = 'storm'
-vim.o.background = 'dark'
+vim.cmd[[colorscheme kanagawa ]]
+-- vim.g.tokyonight_style = 'storm'
+-- vim.o.background = 'dark'

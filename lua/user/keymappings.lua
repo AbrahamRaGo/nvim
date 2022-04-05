@@ -59,3 +59,7 @@ vim.api.nvim_set_keymap('n', '<leader>gs', ':Telescope git_status<cr>', opts)
 -- Gitsigns
 vim.api.nvim_set_keymap('n', '<leader>ph', ':Gitsigns preview_hunk <cr>', opts)
 vim.api.nvim_set_keymap('n', '<leader>pcm', ':Gitsigns blame_line <cr>', opts)
+
+-- terminal
+vim.api.nvim_set_keymap('n', '<A-t>', ':tab terminal <cr>', opts)
+
