@@ -44,7 +44,7 @@ vim.o.splitright = true
 vim.o.conceallevel = 0
 vim.o.backup = false
 vim.o.writebackup = false
-vim.o.guifont = 'CaskaydiaCove Nerd Font\\firacode\\mono'
+vim.o.guifont = 'JetBrainsMono Nerd Font Mono\\firacode\\mono'
 vim.cmd[[colorscheme kanagawa ]]
 -- vim.g.tokyonight_style = 'storm'
 -- vim.o.background = 'dark'

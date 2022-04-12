@@ -20,7 +20,7 @@ local diagnostics = {
 local diff = {
 	"diff",
 	colored = true,
-	symbols = { added = " ", modified = "ﰣ ", removed = " " }, -- changes diff symbols
+	symbols = { added = " ", modified = " ", removed = " " }, -- changes diff symbols
   cond = hide_in_width
 }
 
@@ -101,7 +101,7 @@ lualine.setup {
     lualine_b = {branch, diff},
     lualine_c = {},
     lualine_x = {filetype},
-    lualine_y = {filename},
+    lualine_y = {filename, 'progress'},
     lualine_z = {location},
   },
   inactive_sections = {

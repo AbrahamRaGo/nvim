@@ -23,6 +23,7 @@ return require('packer').startup(function(use)
   use { 'nvim-treesitter/nvim-treesitter', run = ':TSUpdate'}
   use 'p00f/nvim-ts-rainbow'
   use 'mvllow/modes.nvim'
+  use 'RRethy/nvim-treesitter-endwise'
 
   -- Comments
   use 'numToStr/Comment.nvim'
