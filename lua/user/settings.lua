@@ -11,6 +11,7 @@ vim.cmd [[set iskeyword+=-]]
 vim.cmd [[set formatoptions-=cro]]
 vim.opt.shortmess:append 'c'
 vim.opt.foldenable = true
+vim.opt.foldmethod = 'syntax'
 vim.o.numberwidth = 3
 vim.o.tabstop = 2
 vim.o.softtabstop = 2

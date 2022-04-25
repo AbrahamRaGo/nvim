@@ -39,6 +39,9 @@ return require('packer').startup(function(use)
   -- Formatting
   use 'jose-elias-alvarez/null-ls.nvim'
 
+  -- Pretty fold
+  use 'anuvyklack/pretty-fold.nvim'
+
   -- Movement
   use 'justinmk/vim-sneak'
 

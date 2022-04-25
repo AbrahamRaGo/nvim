@@ -63,3 +63,6 @@ vim.api.nvim_set_keymap('n', '<leader>pcm', ':Gitsigns blame_line <cr>', opts)
 -- terminal
 vim.api.nvim_set_keymap('n', '<A-t>', ':tab terminal <cr>', opts)
 
+-- Folding
+vim.api.nvim_set_keymap('n', '<leader>l', 'zo <cr>', opts)
+vim.api.nvim_set_keymap('n', '<leader>h', 'zc <cr>', opts)
